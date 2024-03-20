@@ -1,0 +1,462 @@
+uk_parliament = {
+	DEBUG_RECALC = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			UK_congress_get_quorum = yes
+		}
+		
+	}
+	#USA_congress_large_opposition
+#USA_congress_medium_opposition
+#USA_congress_small_opposition
+#USA_congress_large_support
+#USA_congress_medium_support
+#USA_congress_small_support
+	DEBUG_large_support = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_large_support = yes
+		}
+		
+	}
+	DEBUG_medium_support = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_medium_support = yes
+		}
+		
+	}
+	DEBUG_small_support = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_small_support = yes
+		}
+		
+	}
+	DEBUG_large_opposition = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_large_opposition = yes
+		}
+		
+	}
+	
+	DEBUG_medium_opposition = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_medium_opposition = yes
+		}
+		
+	}
+	DEBUG_small_opposition = {
+		priority = 999
+		icon = category_generic_crisis
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		
+		complete_effect = {
+			USA_congress_small_opposition = yes
+		}
+		
+	}
+	
+	
+	democratic_campaigns = { #BASE
+		priority = 42
+		icon = generic_political_discourse
+		available = {
+			
+		}
+		visible = {
+			has_government = democratic
+		}
+		cost = 50
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+		modifier = {
+			democratic_drift = 1
+		}
+		days_remove = 50
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	Push_for_spending_small = { #BASE
+		priority = 42
+		icon = ger_mefo_bills
+		available = {
+			parliament_low_support_trigger = yes
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 50
+			}
+		}
+		visible = {
+		#	has_country_flag = Push_for_spending_dem_flag
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+		}
+		cancel_effect = {clr_country_flag = parliament_in_session_flag}
+		cancel_trigger = {
+			parliament_low_support_trigger = no
+			political_power_daily < 0.5
+			has_political_power < 50
+			
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+		modifier = {
+			political_power_gain = -0.5
+			consumer_goods_factor = 0.05
+		}
+		days_remove = 70
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			USA_congress_small_support = yes
+		}
+	}
+	Push_for_spending_big = { #BASE
+		priority = 42
+		icon = ger_mefo_bills
+		available = {
+			parliament_low_support_trigger = yes
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 1
+				has_political_power > 50
+			}
+		}
+		visible = {
+		#	has_country_flag = Push_for_spending_dem_flag
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+		}
+		cancel_effect = {clr_country_flag = parliament_in_session_flag}
+		cancel_trigger = {
+			parliament_low_support_trigger = no
+			political_power_daily < 1
+			has_political_power < 50
+			
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+		modifier = {
+			political_power_gain = -1
+			consumer_goods_factor = -0.1
+		}
+		days_remove = 70
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			USA_congress_medium_support = yes
+		}
+	}
+	Push_for_spending_corp = { #BASE
+		priority = 42
+		icon = ger_mefo_bills
+		available = {
+			parliament_low_support_trigger = yes
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 1
+				has_political_power > 70
+			}
+		}
+		visible = {
+			
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+		}
+		cancel_effect = {clr_country_flag = parliament_in_session_flag}
+		cancel_trigger = {
+			parliament_low_support_trigger = no
+			political_power_daily < 1
+			has_political_power < 70
+			
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+		modifier = {
+			political_power_gain = -1
+			consumer_goods_factor = -0.1
+		}
+		days_remove = 70
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			USA_congress_medium_opposition = yes
+		}
+	}
+	
+	uk_small_lobby_effort = { #BASE
+		priority = 42
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 0.3
+				has_political_power > 10
+			}
+		}
+		visible = {
+			
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				parliament_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				parliament_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				parliament_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			USA_congress_small_support = yes
+		}
+	}
+	uk_medium_lobby_effort = { #BASE
+		priority = 42
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 35
+			}
+		}
+		visible = {
+			
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				parliament_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				parliament_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				parliament_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 45
+		modifier = {
+			political_power_gain = -0.75
+		}
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			USA_congress_medium_support = yes
+		}
+	}
+	
+	###military training act start
+	ENG_military_training_act_parliament = { #focus
+		priority = 41
+		icon = ger_mefo_bills
+		available = {
+			parliament_medium_support_trigger = yes
+			NOT = { has_country_flag = parliament_in_session_flag }
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 50
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_military_training_act
+			NOT = {
+				has_idea = ENG_military_training_act_idea_3
+			}
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = parliament_in_session_flag
+			hidden_effect = {###a cheese to get name of the bill in session events
+				set_victory_points = {
+					province = 2165
+					value = 1000
+				}
+				set_province_name = {
+					id = 2165
+					name = "the expansion of the Military training act"#the added text to the event
+				}
+				
+			}
+			country_event = {id = MBGA.2}
+			
+		}
+		cancel_effect = {
+			clr_country_flag = parliament_in_session_flag
+			hidden_effect = {###a cheese to get name of the bill in session events
+				set_victory_points = {
+					province = 2165
+					value = 1000
+				}
+				set_province_name = {
+					id = 2165
+					name = "The Expansion of the Military Training Act"#the added text to the event
+				}
+				
+			}
+			country_event = {id = MBGA.4}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					parliament_medium_support_trigger = yes
+				}
+				AND = {
+					political_power_daily < 0
+					has_political_power < 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+		modifier = {
+			political_power_gain = -0.5
+		}
+		days_remove = 50
+		remove_effect = {
+			clr_country_flag = parliament_in_session_flag
+			if = {
+				limit = {
+					has_idea = ENG_military_training_act_idea_1
+				}
+				swap_ideas = {
+					remove_idea = ENG_military_training_act_idea_1
+					add_idea = ENG_military_training_act_idea_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ENG_military_training_act_idea_2
+				}
+				swap_ideas = {
+					remove_idea = ENG_military_training_act_idea_2
+					add_idea = ENG_military_training_act_idea_3
+				}
+			}
+			hidden_effect = {###a cheese to get name of the bill in session events
+				set_victory_points = {
+					province = 2165
+					value = 1000
+				}
+				set_province_name = {
+					id = 2165
+					name = "The Expansion of the Military Training Act"#the added text to the event
+				}
+				
+			}
+			country_event = {id = MBGA.3}
+		}
+	}
+	####military training act end
+	
+}

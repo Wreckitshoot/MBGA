@@ -1,0 +1,110 @@
+
+
+congress_set_up_members_effect_start = {
+hidden_effect = {	
+	##SET UP Senate max
+	set_temp_variable = { ST_count_p2 = num_core_states}
+	multiply_temp_variable = { ST_count_p2 = 2 }
+	set_variable = { var = senators_total value = ST_count_p2 }
+	
+	##SET UP SENATOR SUPPORT
+	set_temp_variable = { ST_sup = ST_count_p2}
+	multiply_temp_variable = { ST_sup = party_popularity@ruling_party}
+	round_temp_variable = ST_sup
+	set_variable = { var = senators_support value = ST_sup }
+	
+	##SET UP HOUSE MAX
+	set_temp_variable = { RP_count_p100k = max_manpower_k }
+	divide_temp_variable = { RP_count_p100k = 100 }
+	round_temp_variable = RP_count_p100k
+	set_variable = { var = representatives_total value = RP_count_p100k }
+	
+	##SET UP HOUSE SUPPORT
+	set_temp_variable = { RP_sup = RP_count_p100k}
+	multiply_temp_variable = { RP_sup = party_popularity@ruling_party}
+	round_temp_variable = RP_sup
+	set_variable = { var = representatives_support value = RP_sup }
+	
+	UK_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+}
+
+congress_set_up_members_effect = {
+hidden_effect = {	
+	##SET UP Senate max
+	set_temp_variable = { ST_count_p2 = 0}
+	every_owned_state = {
+		limit = {
+			is_core_of = ROOT
+		}
+		ROOT = {
+			add_to_temp_variable = { ST_count_p2 = 2 }
+		}
+	}
+	set_variable = { var = senators_total value = ST_count_p2 }
+	
+	##SET UP SENATOR SUPPORT
+	set_temp_variable = { ST_sup = ST_count_p2}
+	multiply_temp_variable = { ST_sup = party_popularity@ruling_party}
+	round_temp_variable = ST_sup
+	set_variable = { var = senators_support value = ST_sup }
+	
+	##SET UP HOUSE MAX
+	set_temp_variable = { RP_count_p100k = 0 }
+	every_owned_state = {
+		limit = {
+			is_core_of = ROOT
+		}
+		ROOT = {
+			add_to_temp_variable = { RP_count_p100k = PREV.state_population_k }
+		}
+	}
+	divide_temp_variable = { RP_count_p100k = 100 }
+	round_temp_variable = RP_count_p100k
+	set_variable = { var = representatives_total value = RP_count_p100k }
+	
+	##SET UP HOUSE SUPPORT
+	set_temp_variable = { RP_sup = RP_count_p100k}
+	multiply_temp_variable = { RP_sup = party_popularity@ruling_party}
+	round_temp_variable = RP_sup
+	set_variable = { var = representatives_support value = RP_sup }
+	
+	UK_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+}
+congress_set_up_members_effect_no_sup = {
+hidden_effect = {	
+	##SET UP Senate max
+	set_temp_variable = { ST_count_p2 = 0}
+	every_owned_state = {
+		limit = {
+			is_core_of = ROOT
+		}
+		ROOT = {
+			add_to_temp_variable = { ST_count_p2 = 2 }
+		}
+	}
+	set_variable = { var = senators_total value = ST_count_p2 }
+	
+	
+	
+	##SET UP HOUSE MAX
+	set_temp_variable = { RP_count_p100k = 0 }
+	every_owned_state = {
+		limit = {
+			is_core_of = ROOT
+		}
+		ROOT = {
+			add_to_temp_variable = { RP_count_p100k = PREV.state_population_k }
+		}
+	}
+	divide_temp_variable = { RP_count_p100k = 100 }
+	round_temp_variable = RP_count_p100k
+	set_variable = { var = representatives_total value = RP_count_p100k }
+	
+	UK_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+}

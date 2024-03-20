@@ -1,0 +1,199 @@
+prepare_for_the_inevitable_up = {
+	custom_effect_tooltip = prepare_for_the_inevitable_up_tooltip
+	add_to_variable = { prepare_for_the_inevitable_var = 0.025}
+}
+ENG_imperial_conference_set_subject_counter_MBGA = {
+	set_variable = {
+		var = ENG_imperial_conference_number_of_subjects
+		value = 0
+	}
+	if = {
+		limit = {
+			CAN = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			SAF = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			RAJ = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			AST = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			NZL = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			IRE = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+}
+# Clear Imperial Conference flags
+ENG_imperial_conference_clear_in_progress_flags_MBGA = {
+	if = {
+		limit = {
+			check_variable = { var = ENG_imperial_conference_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		set_variable = {
+			var = ENG_imperial_conference_answers
+			value = 0
+		}
+	}
+}
+Update_imperial_modifiers = {
+	#Voted_yes_on_imperial_economy
+	#Voted_yes_on_imperial_trade
+	#Voted_yes_on_imperial_defence
+	add_political_power = 100
+	
+	
+	####imperial economy
+	
+	every_country = {
+		limit = {
+			has_country_flag = Voted_yes_on_imperial_economy
+			
+		}
+		set_variable = {
+			var = imperial_economy_members
+			value = 0
+		}
+		add_political_power = 100
+		every_country = {
+			limit = {
+				has_country_flag = Voted_yes_on_imperial_economy
+			}
+			PREV = { add_to_variable = { imperial_economy_members = 1 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { 
+						modifier = ENG_imperial_economy_modifier 
+						scope = THIS
+					}
+				}
+				ENG = {
+					has_completed_focus = ENG_imperial_economic_forum
+				}
+			}
+			add_dynamic_modifier = { 
+				modifier = ENG_imperial_economy_modifier  
+				scope = THIS
+			}
+			add_political_power = 100
+		}
+		set_variable = { imperial_economy_flat = imperial_economy_members }
+		set_variable = { imperial_economy_percent = 0.05 }
+		multiply_variable = { imperial_economy_percent = imperial_economy_members }
+		set_variable = { imperial_economy_percent_neg = imperial_economy_percent }
+		multiply_variable = { imperial_economy_percent_neg = -1 }
+	}
+	
+	
+	
+	
+	####imperial trade
+	
+	set_variable = {
+		var = imperial_trade_members
+		value = 0
+	}
+	#AST
+	#CAN
+	#NZL
+	#ENG
+	#IRE
+	#JAM
+	#NGA
+	#RAJ
+	#PAK
+	#SAF
+	
+	every_country = {
+		limit = {
+			has_country_flag = Voted_yes_on_imperial_trade
+			ENG = {
+				has_completed_focus = ENG_imperial_trade_commitee
+			}
+		}
+		add_ideas = ENG_imperial_trade_idea
+	}
+	####
+	every_country = {
+		limit = {
+			has_country_flag = Voted_yes_on_imperial_defence
+			ENG = {
+				has_completed_focus = ENG_imperial_defence_force
+			}
+		}
+		set_variable = {
+			var = imperial_defence_members
+			value = 0
+		}
+		every_country = {
+			limit = {
+				has_country_flag = Voted_yes_on_imperial_defence
+			}
+			PREV = {
+				add_to_variable = { imperial_defence_members = 1 }
+			}
+		}
+	}
+	
+}

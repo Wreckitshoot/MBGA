@@ -1,0 +1,38 @@
+IRE_irish_independence = {
+	finish_constituion = {
+
+		icon = generic_form_nation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = IRE ## ROOT = decision selector
+			compare_autonomy_progress_ratio > 0.99
+			has_autonomy_state = autonomy_dominion
+			NOT = {
+				has_country_flag = loyalty_secured
+			}
+		}
+
+		visible = {
+			is_subject = yes
+		}
+		fire_only_once = yes
+
+		cost = 0
+		ai_will_do = {
+			base = 9999
+		}
+		complete_effect = { ## when this decision is selected this happens
+			ENG = {
+				set_autonomy = {
+					target = IRE
+					autonomy_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = yes
+				}
+			}
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+			remove_ideas = IRE_drafting_new_consitution
+		}
+	}
+}

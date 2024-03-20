@@ -1,0 +1,76 @@
+
+
+
+prepare_for_the_inevitable_modifier = {
+	remove_trigger = { 
+		NOT = {
+			tag = ENG
+		}
+	}
+	
+	icon = GFX_idea_generic_production_bonus
+	
+	war_support_factor = prepare_for_the_inevitable_var
+	war_stability_factor = prepare_for_the_inevitable_var
+	production_speed_arms_factory_factor = 0.1
+	industrial_capacity_factory = 0.05
+	
+}
+
+ENG_imperial_economy_modifier = {
+	#Voted_yes_on_imperial_economy
+	enable = { always = yes }
+	icon = GFX_idea_man_five_year_plan_industry
+	consumer_goods_factor = imperial_economy_percent_neg
+	global_building_slots = imperial_economy_flat
+	industrial_capacity_factory = imperial_economy_percent
+	cic_construction_boost_factor = imperial_economy_percent
+	production_speed_buildings_factor = imperial_economy_percent
+}
+ENG_imperial_trade_modifier = {
+	icon = GFX_idea_eng_steady_as_she_goes
+	enable = { always = yes }
+	#AST
+	#CAN
+	#NZL
+	#ENG
+	#IRE
+	#JAM
+	#NGA
+	#RAJ
+	#PAK
+	#SAF
+	
+	targeted_modifier = {
+		tag = AST
+		trade_cost_for_target_factor = AST_trade_member
+	}
+	targeted_modifier = {
+		tag = CAN
+		trade_cost_for_target_factor = CAN_trade_member
+	}
+	targeted_modifier = {
+		tag = NZL
+		trade_cost_for_target_factor = NZL_trade_member
+	}
+	targeted_modifier = {
+		tag = IRE
+		trade_cost_for_target_factor = IRE_trade_member
+	}
+	targeted_modifier = {
+		tag = JAM
+		trade_cost_for_target_factor = JAM_trade_member
+	}
+	targeted_modifier = {
+		tag = NGA
+		trade_cost_for_target_factor = NGA_trade_member
+	}
+	targeted_modifier = {
+		tag = RAJ
+		trade_cost_for_target_factor = RAJ_trade_member
+	}
+	targeted_modifier = {
+		tag = SAF
+		trade_cost_for_target_factor = PAK_trade_member
+	}
+}

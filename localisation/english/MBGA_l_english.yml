@@ -1,0 +1,232 @@
+﻿l_english:
+
+ ###goals/focuses
+ ENG_expand_westminister:0 "Expand Westminister"
+ ENG_expand_westminister_desc:0 "We still hold many teritories in the empire that could benefit from self rule, lets bring out the maps."
+ ENG_Continue_the_statute:0 "Continue the Statute"
+ ENG_Continue_the_statute_desc:0 "The Statute of westminister has done wonders for the stability of our empire and the people with in it, let us continue the policy of self rule."
+ ENG_Abandon_westminister:0 "Abandon Westminister"
+ ENG_Abandon_westminister_desc:0 "It is clear the satatute of westminister was a mistake, the colonies can not be allowed to screw up their own economies a strong british hand directed from london is needed keep the empire stable."
+ ENG_meditereanian_fortify:0 "Fortify the Mediterranean"
+ ENG_meditereanian_fortify_desc:0 "The route through the Mediterranean is a vitally important shortcut to and from India. As such, it is of utmost importance to keep it open and in our hands."
+ ENG_Anti_ITA_warfare:0 "Anti-Italian Warfare"
+ ENG_Anti_ITA_warfare_desc:0 "In order to defeat Italy we must train our men on counter-italian tatics in preperations for a head on assault"
+ ENG_The_meditereanian_threat:0 "The Mediterranean Threat"
+ ENG_The_meditereanian_threat_desc:0 "One of our key trade routes is dependent on the Mediterranean sea, and italy's childish ambitions threaten our spice trade, we must put them in their place."
+ ENG_war_with_soviets:0 "War with USSR"
+ ENG_war_with_soviets_desc:0 "It is clear that in order to prevent a socielist hegemony over europe we must act now"
+ ENG_Anti_SOV_warfare:0 "Anti-Soviet Warfare"
+ ENG_Anti_SOV_warfare_desc:0 "In order to defeat Russia we must train our men on counter-russian tatics in preperations for a head on assault"
+ ENG_The_communist_threat:0 "The Communist Threat"
+ ENG_The_communist_threat_desc:0 "The communist revolution in russia has already caused significant harm to the people of russia and their aristocracy, in order to prevent the self-desctructive ideology from reaching our nation we must declare them a threat to our way of life and expunge them from the face of the earth."
+ ENG_belly_of_the_bear:0 "Expose the Belly of the Bear"
+ ENG_belly_of_the_bear_desc:0 "Taking on the Soviets without any beachheads is an incredible challenge. We will demand passage through the countries of [PER.GetName] and [AFG.GetName], and strike at the Soviets where they least expect it; overland and into their exposed belly."
+ ENG_alliance_with_france:0 "Alliance with France"
+ ENG_alliance_with_france_desc:0 "Our war with Germany in the Great war heavily relied on the country-sides of France, france who wishes not to have another great war on their hands should duelly accept this chance to prevent a german resugence."
+ ENG_Anti_GER_warfare:0 "Anti-German Warfare"
+ ENG_Anti_GER_warfare_desc:0 "In order to defeat Germany we must train our men on counter-german tatics in preperations for a head on assault"
+ ENG_The_german_threat:0 "The German Threat"
+ ENG_The_german_threat_desc:0 "The germans ambitions are clear to see, they have not learned their lesson from the great war, we must act fact while they are still re-arming before they push deeper into europe."
+ ENG_Anti_JAP_warfare:0 "Anti-Japanese Warfare"
+ ENG_Anti_JAP_warfare_desc:0 "In order to defeat Japan we must train our men on counter-japanese tatics in preperations for a head on assault"
+ ENG_The_eastern_threat:0 "The Eastern Threat"
+ ENG_The_eastern_threat_desc:0 "The Eastern Threat, Japan has ambitions for an Empire in both China but also in east indies which we hold great stake in, we can not allow japan to compramise our hegemony"
+ ENG_default_for_alliance:0 "Default for Alliance"
+ ENG_default_for_alliance_desc:0 "Greece is in a tricky situation when it comes to it's debts, we could offer it a deal, we will let them default on their debt if they join our alliance."
+ ENG_king_micheals_coup:0 "King Michael's Coup"
+ ENG_king_micheals_coup_desc:0 "King Carol is not a suitable leader for Romania, Micheal on the other hand would make a great leader for our Ally (Britain knows Best)"
+ ENG_assassinate_prince_paul:0 "Assassinate Prince Paul"
+ ENG_assassinate_prince_paul_desc:0 "It is clear Prince Paul has ties with the Germans, but unlike Paul, Peter is a more open and favorible ruler of yugoslavia, if we just removed Paul, we may be able to secure our alliance with the serbs."
+ ENG_friends_in_the_benelux:0 "Friends in the Benelux"
+ ENG_friends_in_the_benelux_desc:0 "The benelux is full administration that hold to our values and would gladly help us in preventing german hegomy if we only asked."
+ ENG_friends_in_the_baltics:0 "Friends in the Baltics"
+ ENG_friends_in_the_baltics_desc:0 "The baltics are at the mercy of both the Soviets and the Germans, if they could have secruity knowing we had their backs, it is assured they'd try to have our backs."
+ ENG_friends_in_scandinavia:0 "Friends in Scandinavia"
+ ENG_friends_in_scandinavia_desc:0 "Our friends across the northern sea are nations very open to holding onto their independence from scum like Hitler and Stalin, if we hold out a hand of friendship they will surely accept."
+ ENG_expand_the_allies:0 "Expand the Allies"
+ ENG_expand_the_allies_desc:0 "In order to fight against the Germans or the Soviets we will need allies, which brings us to our friends across the channel who helped us in the great war"
+ ENG_Innovate_our_doctrine_of_war:0 "Innovate our doctrines of war"
+ ENG_Innovate_our_doctrine_of_war_desc:0 "In preperations for the inevitable we need to make sure our military doctrines are always improving and prepared for what ever the enemy throws at us."
+ ENG_recruit_oxford_scientists:0 "Recruit Oxford Scientists"
+ ENG_recruit_oxford_scientists_desc:0 "Oxford is our greatest university and the hotspot of the Empire's greatest minds, if we desire to develop technologies to fight the next war, we'll need to prepared in the science department."
+ ENG_scotish_oil:0 "Scotish Oil"
+ ENG_scotish_oil_desc:0 "Rumours of oil near okney and shetland have yet to be proven false, it would be very useful to have oil close at hand incase of war"
+ ENG_scotish_manufactories:0 "Build Scotish Manufactories"
+ ENG_scotish_manufactories_desc:0 "Scotland has plenty of men who desire jobs in support kingdom and defence of the empire, it should be simple enough to find a manufatory company to build a few factories up north"
+ ENG_Expand_MI6:0 "Expand SIS"
+ ENG_Expand_MI6_desc:0 "In preperations for war with Germany, it is important we know what they are doing on the inside, hence greater funding is reqiuired for SIS"
+ ENG_royal_mobilisation_act:0 "Royal Mobilization Act"
+ ENG_royal_mobilisation_act_desc:0 "§6Ask DYS§!"
+ 
+ ENG_prepare_rations:0 "Prepare war rations"
+ ENG_prepare_rations_desc:0 "§6ask dys§!"
+ 
+ ENG_Cilvilian_home_front_training:0 "Cilvilian Home Front Training"
+ ENG_Cilvilian_home_front_training_desc:0 "§6ask dys§!"
+ 
+ ###flags 
+ parliament_in_session_flag:0 "Parliament is in session"
+ 
+ ###decisions
+ ENG_release_nigeria:0 "Release Nigeria"
+ ENG_reoccupy_suez:0 "Re-occupy the Suez"
+ ENG_Release_egypt:0 "Release Egypt"
+ ENG_release_west_indies:0 "Release West Indies"
+ ENG_expand_westminister_decs:0 "Expand Westminister"
+ ENG_expand_westminister_decs_desc:0 "We still hold many teritories in the empire that could benefit from self rule, lets bring out the maps."
+ ENG_Expand_SAF:0 "Expand South African Dominion"
+ 
+ ENG_discuss_indian_dominionhood:0 "Propose Indian Autonomy"
+ ENG_discuss_indian_dominionhood_desc:0 "The indian population of the raj have been pushing heavily to hold the same rights as the rest of our dominions, if we ever wish for them to take us seriously then equality is a neccesity."
+ 
+ IRE_irish_independence:0 "Irish independence"
+ finish_constituion:0 "Finish Constituion"
+ 
+ ENG_fortify_Mediterranean:0 "Fortify the Mediterranean"
+ ENG_fortify_Mediterranean_desc:0 "The route through the Mediterranean is a vitally important shortcut to and from India. As such, it is of utmost importance to keep it open and in our hands."
+ fortify_the_rock:0 "Fortify the Rock"
+ Protect_suez:0 "Fortify the Suez"
+ Fortify_malta:0 "Fortify Malta"
+
+ 
+ ENG_fortify_east_asia:0 "Fortify East Asia"
+ ENG_fortify_east_asia_desc:0 "Many of our old colonies in the east are threatened by civil wars and imperial ambitions of local countries. We must not neglect our remaining outposts, but continue to develop these regions to secure our global presence."
+ The_Burma_Road:0 "The Burma Road"
+ The_Singapore_Strategy:0 "The Singapore Strategy"
+ Singapore_landward_forts:0 "Build Singapore Landward Forts"
+ Peninsular_War:0 "Prepare for a Siamese Invasion"
+ Hold_Hong_Kong:0 "Hold Hong-Kong"
+ Hong_Kong_Landward_Forts:0 "Build Hong-Kong Landward Forts"
+ Hong_Kong_Air_Defence:0 "Build Hong-Kong Air Defences"
+ Influence_China:0 "Influence China"
+ 
+ Push_for_spending_small:0 "Stimulate Small businesses"
+ Push_for_spending_small_desc:0 "Pass a Small business stimulus bill, I hear they make up the backbone of our economy"
+ 
+ Push_for_spending_corp:0 "Corporate Funding"
+ Push_for_spending_corp_desc:0 "Fund the corporations that make our nation run, it'll cost a lot and giving money to those who don't need it might not be popular"
+ 
+ Push_for_spending_big:0 "Stimulate Big businesses"
+ Push_for_spending_big_desc:0 "Pass a Big business stimulus bill"
+ 
+ uk_parliament:0 "Parliament"
+ uk_parliament_desc:0 "§6Ask DYS§!"
+ 
+ ENG_parliament_act_1911:0 "Parliament Act of 1911"
+ ENG_parliament_act_1911_desc:0 "§GDev notes, makes it so house of lords have no power, will need to revoke to give power to lords§!\nThe Act effectively removed the right of the House of Lords to veto money bills completely, and replaced its right of veto over other public bills with the ability to delay them for a maximum of two years . It also reduced the maximum term of a parliament from seven years to five."
+ 
+ ENG_military_training_act_parliament:0 "Expand the Military Training Act"
+ ENG_military_training_act_parliament_desc:0 "§6Ask DYS§!"
+ 
+ ENG_home_defence_act_decs:0 "The Home Defence Act"
+ ENG_home_defence_act_decs_desc:0 ""
+ ENG_build_defences_in_state:0 "Build Defences in [FROM.GetName]"
+ ENG_build_defences_in_state_desc:0 ""
+ 
+ ###tooltips
+ ENG_royal_mobilisation_act_tooltip:0 "§YUpon entering war, [ROOT.GetName] will immidietlly enter war economy§!"
+ 
+ ENG_prepare_rations_tooltip:0 "On War:Add §YPrepared Rations§!, which grants (Supply Efficiency: §G+30%§!)."
+ 
+ parliament_low_support_trigger_tt:0 "[ENG_parliament_act_1911_low_check]"
+ ENG_parliament_act_1911_low_tt:0 "Requires the support of at least §Y[?ROOT.Hquorum_low] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ 
+ parliament_medium_support_trigger_tt:0 "[ENG_parliament_act_1911_med_check]"
+ ENG_parliament_act_1911_med_tt:0 "Requires the support of at least §Y[?ROOT.Hquorum_medium] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ 
+ parliament_high_support_trigger_tt:0 "[ENG_parliament_act_1911_high_check]"
+ ENG_parliament_act_1911_high_tt:0 "Requires the support of at least §Y[?ROOT.Hquorum_high] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ 
+ congress_low_support_trigger_tt:1 "Requires the support of at least §Y[?ROOT.quorum_low] [senater_sl]s§! (current: [?ROOT.senators_support]) and §Y[?ROOT.Hquorum_low] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ congress_medium_support_trigger_tt:1 "Requires the support of at least §Y[?ROOT.quorum_medium] [senater_sl]s§! (current: [?ROOT.senators_support]) and §Y[?ROOT.Hquorum_medium] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ congress_high_support_trigger_tt:1 "Requires the support of at least §Y[?ROOT.quorum_high] [senater_sl]s§! (current: [?ROOT.senators_support]) and §Y[?ROOT.Hquorum_high] [representative_sl]s§! (current: [?ROOT.representatives_support])\n"
+ 
+ prepare_for_the_inevitable_up_tooltip:0 "Modify §YPrepare for the Inevitable§! by\nWar Penalty Stability Modifier:§G +2.5%§!\nWar Support:§G +2.5%§!"
+ 
+ ###ideas
+ ENG_imperial_trade_idea:0 "Imperial Trade Comitee"
+ 
+ IRE_drafting_new_consitution:0 "Drafting a New Irish Constituion"
+ IRE_drafting_new_consitution_desc:0 "Ireland desires complete independence from the English and so it intends to draft a constitution which states its complete independence from England."
+ ENG_military_training_act_idea_1:0 "Military Training Act"
+ ENG_military_training_act_idea_2:0 "Military Training Act"
+ ENG_military_training_act_idea_3:0 "Military Training Act"
+ ENG_military_training_act_idea_1_desc:0 "§6Ask DYS§!"
+ ENG_military_training_act_idea_2_desc:0 "§6Ask DYS§!"
+ ENG_military_training_act_idea_3_desc:0 "§6Ask DYS§!"
+ 
+ ENG_prepare_for_the_inevitable_MBGA_idea:0 "Prepare for the Inevitable"
+ 
+ prepare_rations_idea:0 "Prepared Rations"
+ prepare_rations_idea_desc:0 "§6ASK DYS§!"
+ 
+ stiff_upper_lip_2:0 "British Stoicism"
+ stiff_upper_lip_2_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same\nYours is the Earth and everything that's in it,\nAnd - which is more - you'll be a Man, my son. "
+ 
+ never_again:0 "Never Again"
+ never_again_desc:0 "Britain is driven to prevent a second world war, it has a smaller army but wishes to use it tactically as to prevent the greater loss of human life"
+ 
+ ENG_idea_The_eastern_threat:0 "The Eastern Threat"
+ ENG_idea_The_eastern_threat_2:0 "The Eastern Threat"
+ ENG_idea_The_german_threat:0 "The German Threat"
+ ENG_idea_The_german_threat_2:0 "The German Threat"
+ ENG_idea_The_communist_threat:0 "The Communist Threat"
+ ENG_idea_The_communist_threat_2:0 "The Communist Threat"
+ ENG_idea_The_meditereanian_threat:0 "The Mediterranean Threat"
+ ENG_idea_The_meditereanian_threat_2:0 "The Mediterranean Threat"
+ 
+ ###Dynamic modifiers
+ ENG_imperial_economy_modifier:0 "Imperial Economic Forum"
+ prepare_for_the_inevitable_modifier:0 "Prepare for the Inevitable"
+ 
+ 
+ ###events
+ 
+ MBGA.1.t:0 "Royal mobilization act"
+ MBGA.1.d:0 "The royal mobilization act is in full swing, our preperations have alowed our economy to immidietlly mobilise into that on par with the Germans"
+ MBGA.1.a:0 "Jolly good work boys"
+ 
+ MBGA.2.t:0 "Parliament is now in session"
+ MBGA.2.d:0 "Parliament has now entered a period of debate over [713.GetCapitalVictoryPointName]."
+ MBGA.2.a:0 "Let the debate begin"
+ 
+ MBGA.3.t:0 "Bill Passes!"
+ MBGA.3.d:0 "[713.GetCapitalVictoryPointName] has after weeks of debate been ratified by both The House of Commons and that of The House of Lords. [713.GetCapitalVictoryPointName] will be going into immidiet effect as of noon tomorrow."
+ MBGA.3.a:0 "Huzzah!"
+ 
+ MBGA.4.t:0 "Bill fails!"
+ MBGA.4.d:0 "Despite weeks of debate [713.GetCapitalVictoryPointName] has failed to attract enough support in order to be ratified, and has been put on hold for the foreseeable future."
+ MBGA.4.a:0 "Bugger!"
+ 
+ MBGA.5.t:0 "War rations came in handy"
+ MBGA.5.d:0 "We have prepared these rations for such a time, now that war is upon us, we may let our army banquet on the surplus kept stock"
+ MBGA.5.a:0 "Better to have and not need then need and not have"
+ 
+ MBGA.6.t:0 "England offers Aliance"
+ MBGA.6.d:0 "England has sent us an invite to join their military Faction in preperation against world threats like Germany or the soviet Union."
+ MBGA.6.a:0 "Of course"
+ MBGA.6.b:0 "No thanks"
+ 
+ MBGA.7.t:0 "[From.GetName] said no!!"
+ MBGA.7.d:0 "[FROM.GetName], despite the advantages of an Alliance have decline our invite to the Allies"
+ MBGA.7.a:0 "Bugger!"
+ 
+ MBGA.8.t:0 "[FROM.GetName] offers deal"
+ MBGA.8.d:0 "In return for joining the Allies [FROM.GetName] is willing to let us default on our debt to them"
+ MBGA.8.a:0 "Deal!"
+ MBGA.8.b:0 "Pass"
+ 
+ MBGA.29.t:0 "Indian Autonomy"
+ MBGA.29.d:0 "After heavy debate India will be granted the same rights as the other dominions"
+ MBGA.29.a:0 "Good stuff"
+ 
+ ###opinion modifiers
+ abandoned_westminister:0 "[ENG.GetName] Abandoned Westminister"
+ declared_us_a_threat:0 "Declared us a threat!"
+ declared_us_a_threat_trade:0 "Declared us a threat!"
+ 
+ ###Country names
+ IRE_UK:0 "Irish free State"
+ JAM_west_indies:0 "British West Indies"
+ EGY_english_dominion:0 "Dominion of Egypt"
+ NGA_english_dominion:0 "Dominion of Nigeria"

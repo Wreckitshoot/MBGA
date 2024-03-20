@@ -1,0 +1,115 @@
+
+
+defined_text = {
+	name = ENG_parliament_act_1911_low_check
+	
+	text = {
+		trigger = {
+			has_idea = ENG_parliament_act_1911
+		}
+		localization_key = ENG_parliament_act_1911_low_tt
+	}
+	text = {
+		localization_key = congress_low_support_trigger_tt
+	}
+}
+defined_text = {
+	name = ENG_parliament_act_1911_med_check
+	
+	text = {
+		trigger = {
+			has_idea = ENG_parliament_act_1911
+		}
+		localization_key = ENG_parliament_act_1911_med_tt
+	}
+	text = {
+		localization_key = congress_medium_support_trigger_tt
+	}
+}
+defined_text = {
+	name = ENG_parliament_act_1911_high_check
+	
+	text = {
+		trigger = {
+			has_idea = ENG_parliament_act_1911
+		}
+		localization_key = ENG_parliament_act_1911_high_tt
+	}
+	text = {
+		localization_key = congress_high_support_trigger_tt
+	}
+}
+
+
+defined_text = {
+	name = USA_CONGRESS_POLICY_DESC_SL
+	
+	text = {
+		localization_key = USA_CONGRESS_POLICY_DESC
+	}
+}
+defined_text = {
+	name = representative_sl
+	text = {
+		trigger = {
+			
+			Im_a_parliament = yes
+		}
+		localization_key = Mp_LOC
+	}
+	text = {
+		localization_key = representative_LOC
+	}
+}
+defined_text = {
+	name = senater_sl
+	text = {
+		trigger = {
+			
+			Im_a_parliament = yes
+		}
+		localization_key = lord_LOC
+	}
+	text = {
+		localization_key = senater_LOC
+	}
+}
+defined_text = {
+	name = USA_congress_sl
+	text = {
+		trigger = {
+			
+			Im_a_parliament = yes
+		}
+		localization_key = ENG_parliament_LOC
+	}
+	text = {
+		localization_key = USA_congress_LOC
+	}
+}
+defined_text = {
+	name = senate_support_header_sl
+	text = {
+		trigger = {
+			
+			Im_a_parliament = yes
+		}
+		localization_key = LORDS_support_header
+	}
+	text = {
+		localization_key = senate_support_header_LOC
+	}
+}
+defined_text = {
+	name = house_support_header_sl
+	text = {
+		trigger = {
+			
+			Im_a_parliament = yes
+		}
+		localization_key = COMMONS_support_header
+	}
+	text = {
+		localization_key = house_support_header_LOC
+	}
+}

@@ -1,0 +1,409 @@
+ENG_fortify_east_asia = {
+	The_Burma_Road = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			CHI = { 
+				has_war_with = JAP 
+				NOT = { has_war_with = ENG }
+			}
+			JAP = { NOT = { is_in_faction_with = ENG } }
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			640 = {
+				if = {
+					limit = { 
+						OR = { 
+							ENG = { controls_state = 640 }
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_state = 640
+							} 
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			325 = {
+				if = {
+					limit = { 
+					OR = { 
+							CHI = { controls_state = 325 }
+							any_other_country = {
+								is_in_faction_with = CHI
+								controls_state = 640
+							} 
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			601 = {
+				if = {
+					limit = { 
+						OR = { 
+							CHI = { controls_state = 601 }
+							any_other_country = {
+								is_in_faction_with = CHI
+								controls_state = 601
+							} 
+						} }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_war_support = 0.05
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				unlock_decision_tooltip = CHI_expand_the_burma_road
+			}
+			CHI = {
+				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
+				country_event = britain.4
+			}
+			YUN = {
+				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
+				country_event = britain.5
+			}
+			JAP = {
+				add_opinion_modifier = { target = ENG modifier = burma_road_bad } 
+			}
+		}
+	}
+	The_Singapore_Strategy = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+		navy_experience = 25
+			336 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 12299
+					instant_build = yes
+				}
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = singapore_focus
+						}
+					}
+				}
+			}
+		}
+	}
+	Singapore_landward_forts = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			336 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12299
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = sp_landward_forts_focus
+						}
+					}
+				}
+			}
+		}
+	}
+	Peninsular_War = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			336 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7329
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4310
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7342
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = peninsular_focus
+						}
+					}
+				}
+			}
+		}
+	}
+	Hold_Hong_Kong = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			navy_experience = 25
+			326 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 10062
+					instant_build = yes
+				}
+			}
+		}
+	}
+	Hong_Kong_Landward_Forts = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			326 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10062
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2				
+					instant_build = yes
+				}
+			}
+		}
+	}
+	Hong_Kong_Air_Defence = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			326 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	Influence_China = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			CHI = { exists = yes }
+			has_government = democratic
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			event_target:WTT_current_china_leader = {
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
+				add_timed_idea = { idea = democratic_influence days = 1095 }
+				country_event = { id = generic.1 }
+				set_country_flag = ENG_influenced_by_britain_flag
+			}
+			every_other_country = {
+				limit = { 
+					NOT = { has_government = democratic }
+					num_of_factories > 30
+				}
+				add_opinion_modifier = { target = CHI modifier = democratic_leanings_bad }
+			}
+		}
+	}
+
+}

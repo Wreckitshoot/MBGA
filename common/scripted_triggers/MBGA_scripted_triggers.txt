@@ -1,0 +1,51 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+Im_a_parliament = {
+	tag = ENG
+}
+parliament_low_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = parliament_low_support_trigger_tt
+		OR = {
+			check_variable = { var = senators_support value = quorum_low compare = greater_than_or_equals }
+			has_idea = ENG_parliament_act_1911
+		}
+		
+		check_variable = { var = representatives_support value = Hquorum_low compare = greater_than_or_equals }
+	}
+}
+
+parliament_medium_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = parliament_medium_support_trigger_tt
+		OR = {
+			check_variable = { var = senators_support value = quorum_medium compare = greater_than_or_equals }
+			has_idea = ENG_parliament_act_1911
+		}
+		check_variable = { var = representatives_support value = Hquorum_medium compare = greater_than_or_equals }
+	}
+}
+
+parliament_high_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = parliament_high_support_trigger_tt
+		OR = {
+			check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
+			has_idea = ENG_parliament_act_1911
+		}
+		check_variable = { var = representatives_support value = Hquorum_high compare = greater_than_or_equals }
+	}
+}

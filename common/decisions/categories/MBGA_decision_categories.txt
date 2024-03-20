@@ -1,0 +1,75 @@
+################
+### stuff! ####
+################
+
+	
+	uk_parliament = {
+		icon = GFX_idea_decision_parliament
+		allowed = {
+			original_tag = ENG
+		}
+		visible = {
+			
+		}
+	
+		scripted_gui = usa_congress_decision_ui	
+	
+		priority = 85
+	}
+	ENG_expand_westminister_decs = {
+		icon = category_generic_prospect_for_resources
+		allowed = {
+			original_tag = ENG
+		}
+		visible = {
+			has_completed_focus = ENG_expand_westminister
+		}
+	
+		priority = 50
+	}
+	ENG_home_defence_act_decs = {
+		icon = category_generic_prospect_for_resources
+		allowed = {
+			original_tag = ENG
+		}
+		visible = {
+			has_completed_focus = ENG_home_defence
+		}
+	
+		priority = 50
+	}
+	ENG_fortify_east_asia = {
+		icon = ger_mefo_bills ##in Hoi4\interface\decisions.gfx
+		allowed = {
+			original_tag = ENG
+		}
+
+		visible = {
+			has_completed_focus = ENG_fortify_east_asia
+		}
+	}
+	ENG_fortify_Mediterranean = {
+		icon = ger_mefo_bills ##in Hoi4\interface\decisions.gfx
+		allowed = {
+			original_tag = ENG
+		}
+
+		visible = {
+			has_completed_focus = ENG_meditereanian_fortify
+		}
+	}
+	IRE_irish_independence = {
+		icon = generic_democracy ##in Hoi4\interface\decisions.gfx
+		allowed = {
+			original_tag = IRE
+		}
+
+		visible = {
+			is_subject_of = ENG
+			NOT = {
+				has_country_flag = loyalty_secured
+			}
+		}
+	}
+
+ 

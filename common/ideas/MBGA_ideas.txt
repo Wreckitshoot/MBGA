@@ -1,0 +1,355 @@
+ideas = {
+
+	country = {
+		ENG_imperial_trade_idea = {
+			allowed = {
+				is_subject = yes
+			}
+			picture = can_wartime_prices_and_trade_board
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				local_resources_factor = 0.3
+				trade_opinion_factor = 0.5
+				extra_trade_to_overlord_factor = 0.5
+				production_lack_of_resource_penalty_factor = -0.5 
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		IRE_drafting_new_consitution = {
+			allowed = {
+				is_subject = yes
+			}
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+		ENG_idea_The_german_threat = {
+			allowed = {
+				country_exists = GER
+			}
+			picture = ENG_idea_The_german_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+		}
+		ENG_idea_The_german_threat_2 = {
+			allowed = {
+				country_exists = GER
+			}
+			picture = ENG_idea_The_german_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.25
+			}
+		}
+		ENG_idea_The_communist_threat = {
+			allowed = {
+				country_exists = SOV
+			}
+			picture = ENG_idea_The_communist_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+		}
+		ENG_idea_The_communist_threat_2 = {
+			allowed = {
+				country_exists = SOV
+			}
+			picture = ENG_idea_The_communist_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.25
+			}
+		}
+		ENG_idea_The_meditereanian_threat = {
+			allowed = {
+				country_exists = ITA
+			}
+			picture = ENG_idea_The_meditereanian_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+		}
+		ENG_idea_The_meditereanian_threat_2 = {
+			allowed = {
+				country_exists = ITA
+			}
+			picture = ENG_idea_The_meditereanian_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.25
+			}
+		}
+		ENG_idea_The_eastern_threat = {
+			allowed = {
+				country_exists = JAP
+			}
+			picture = ENG_idea_The_eastern_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+		}
+		ENG_idea_The_eastern_threat_2 = {
+			allowed = {
+				country_exists = JAP
+			}
+			picture = ENG_idea_The_eastern_threat_icon
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				weekly_manpower = 2500
+				stability_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.25
+			}
+		}
+		never_again = {
+			
+			allowed = {
+				always = no
+			}
+			picture = ENG_the_war_to_end_all_wars
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = -0.60
+				attrition = -0.5
+				unit_upkeep_attrition_factor = -0.5
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+				experience_gain_air = 0.15
+				experience_gain_army_factor = 0.5
+				experience_gain_navy_factor = 0.5
+				experience_gain_air_factor = 0.5
+				offensive_war_stability_factor = 0.5
+				war_support_factor = 0.3
+			}		
+		}
+		stiff_upper_lip_2 = {
+			
+			allowed = {
+				always = no
+			}
+			picture = stiff_upper_lip
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.75
+				weekly_casualties_war_support = 0.01
+				weekly_convoys_war_support = 0.01
+				weekly_bombing_war_support = 0.01
+				surrender_limit = 0.2
+			}
+			
+			rule = {
+				can_create_factions = yes
+			}			
+		}
+		prepare_rations_idea = {
+			picture = ENG_rations
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			
+			modifier = {
+				supply_factor = 0.3
+			}
+
+		}
+		ENG_prepare_for_the_inevitable_MBGA_idea = {
+			picture = ENG_military_training_act_idea_1_icon
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.025
+				war_stability_factor = 0.025
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+
+		}
+		ENG_military_training_act_idea_1 = {
+			picture = ENG_military_training_act_idea_1_icon
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.3
+			}
+
+		}
+		ENG_military_training_act_idea_2 = {
+			picture = ENG_military_training_act_idea_2_icon
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.4
+				minimum_training_level = -0.3
+			}
+
+		}
+		ENG_military_training_act_idea_3 = {
+			picture = ENG_military_training_act_idea_3_icon
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.5
+				minimum_training_level = -0.5
+				experience_gain_army_factor = 0.05
+				recruitable_population_factor = 0.30
+			}
+
+		}
+		ENG_parliament_act_1911 = {
+			picture = ENG_parliament_act_1911_icon
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+
+		}
+	}
+}

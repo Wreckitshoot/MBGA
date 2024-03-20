@@ -1,0 +1,12 @@
+opinion_modifiers = {
+    declared_us_a_threat = {
+        value = -200      # 
+    }
+    abandoned_westminister = {
+        value = -50      # 
+    }
+    declared_us_a_threat_trade = {
+        trade = yes
+		value = -100      #
+    }
+}

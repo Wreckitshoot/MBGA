@@ -1,0 +1,135 @@
+spriteTypes = {	
+	###decision icons
+	SpriteType = {
+		name = "GFX_idea_decision_parliament"
+		texturefile = "gfx/interface/decisions/decision_parliament.dds"
+	}
+	
+	###spirit icons
+	SpriteType = {
+		name = "GFX_idea_ENG_idea_The_meditereanian_threat_icon"
+		texturefile = "gfx/interface/ideas/ENG_idea_The_meditereanian_threat_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_idea_The_eastern_threat_icon"
+		texturefile = "gfx/interface/ideas/ENG_idea_The_eastern_threat_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_idea_The_communist_threat_icon"
+		texturefile = "gfx/interface/ideas/ENG_idea_The_communist_threat_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_idea_The_german_threat_icon"
+		texturefile = "gfx/interface/ideas/ENG_idea_The_german_threat_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_rations"
+		texturefile = "gfx/interface/ideas/ENG_rations.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_military_training_act_idea_1_icon"
+		texturefile = "gfx/interface/ideas/ENG_military_training_act_idea_1_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_military_training_act_idea_2_icon"
+		texturefile = "gfx/interface/ideas/ENG_military_training_act_idea_2_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_military_training_act_idea_3_icon"
+		texturefile = "gfx/interface/ideas/ENG_military_training_act_idea_3_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_parliament_act_1911_icon"
+		texturefile = "gfx/interface/ideas/ENG_parliament_act_1911_icon.dds"
+	}	
+	
+	
+	###event pictures
+	spriteType = {
+		name = "GFX_UK_parliament_session"
+		texturefile = "gfx/event_pictures/UK_parliament_session.dds"
+	}
+	spriteType = {
+		name = "GFX_UK_rations"
+		texturefile = "gfx/event_pictures/UK_rations.dds"
+	}
+	spriteType = {
+		name = "GFX_UK_mobilisation_1"
+		texturefile = "gfx/event_pictures/UK_mobilisation_1.dds"
+	}
+	
+	###Goals
+	SpriteType = {
+		name = "GFX_Royal_mob_act"
+		texturefile = "gfx/interface/goals/Royal_mob_act.dds"			
+	}
+	SpriteType = {
+		name = "GFX_Prepare_rations"
+		texturefile = "gfx/interface/goals/Prepare_rations.dds"			
+	}	
+	
+	##Goals shine
+	SpriteType = {
+		name = "GFX_Royal_mob_act_shine"
+		texturefile = "gfx/interface/goals/Royal_mob_act.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_mob_act.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_mob_act.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Prepare_rations_shine"
+		texturefile = "gfx/interface/goals/Prepare_rations.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Prepare_rations.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Prepare_rations.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+}

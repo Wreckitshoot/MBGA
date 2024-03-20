@@ -1,0 +1,24 @@
+on_actions = {
+	on_war = {
+		effect = {
+			THIS = {
+				limit = { 
+					TAG = ENG
+					has_country_flag = ENG_royal_mobilisation_act_flag
+				}
+				country_event = { id = MBGA.1 }
+			}
+			THIS = {
+				limit = { 
+					TAG = ENG
+					has_country_flag = ENG_prepare_rations_flag
+				}
+				country_event = { id = MBGA.5 }
+			}
+			
+		}
+	
+	
+	}
+
+}

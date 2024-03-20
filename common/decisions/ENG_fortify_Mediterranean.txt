@@ -1,0 +1,184 @@
+ENG_fortify_Mediterranean = {
+	fortify_the_rock = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			118 = { is_owned_and_controlled_by = ENG }
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			118 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 4135
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 4135
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	Protect_suez = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			907 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			446 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			447 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			446 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12049
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 1155
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10049
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			907 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 10005
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7011
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			447 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 4076
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1071
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	Fortify_malta = {
+
+		icon = generic_operation ##in Hoi4\interface\decisions.gfx
+
+		available = {
+			original_tag = ENG ## 
+			116 = { is_owned_and_controlled_by = ENG }
+		}
+		fire_only_once = yes
+
+		
+		cost = 70
+		
+		complete_effect = { ## when this decision is selected this happens
+			116 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12003
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
