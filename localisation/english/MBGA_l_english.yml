@@ -1,6 +1,11 @@
 ﻿l_english:
 
  ###goals/focuses
+ 
+ ENG_dominion_of_pakistan:0 "Dominian of Pakistan"
+ ENG_dominion_of_pakistan_desc:0 "Inside the Raj there is large marginilised population of muslims we should push to give them their own land and dominion under the empire."
+ ENG_indian_dominionhood:0 "Indian Dominionhood"
+ ENG_indian_dominionhood_desc:0 "After Promising dominionhood to the indians it's high-time we made it official"
  ENG_expand_westminister:0 "Expand Westminister"
  ENG_expand_westminister_desc:0 "We still hold many teritories in the empire that could benefit from self rule, lets bring out the maps."
  ENG_Continue_the_statute:0 "Continue the Statute"
@@ -146,6 +151,9 @@
  ###ideas
  ENG_imperial_trade_idea:0 "Imperial Trade Comitee"
  
+ RAJ_dominionhood:0 "Dominianhood"
+ RAJ_promise_of_dominionhood:0 "The Promise of Dominian hood"
+ 
  IRE_drafting_new_consitution:0 "Drafting a New Irish Constituion"
  IRE_drafting_new_consitution_desc:0 "Ireland desires complete independence from the English and so it intends to draft a constitution which states its complete independence from England."
  ENG_military_training_act_idea_1:0 "Military Training Act"
@@ -216,9 +224,10 @@
  MBGA.8.a:0 "Deal!"
  MBGA.8.b:0 "Pass"
  
- MBGA.29.t:0 "Indian Autonomy"
- MBGA.29.d:0 "After heavy debate India will be granted the same rights as the other dominions"
- MBGA.29.a:0 "Good stuff"
+ MBGA.29.t:0 "Imperial Conference: Indian Autonomy"
+ MBGA.29.d:0 "India is a large part of the Empire and holds a major proportion of the Empires population, yet the people of india do not hold the same rights as many of our other colonies, it has come to a fifty fifty vote between Expanding westminister to include the Raj or maintane the status-quoe. In the end [ROOT.GetLeader.GetName] chose to"
+ MBGA.29.a:0 "Provide Indian Autonomy"
+ MBGA.29.b:0 "Maintane the status-quo"
  
  ###opinion modifiers
  abandoned_westminister:0 "[ENG.GetName] Abandoned Westminister"

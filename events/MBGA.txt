@@ -1600,6 +1600,7 @@ country_event = {
 		name = mtg_britain.105.a
 	}
 }
+##indian autonomy debate
 country_event = {
 	id = MBGA.29
 	title = MBGA.29.t
@@ -1608,9 +1609,17 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	# Ok
+	# choose to give indian autonomy
 	option = {
 		name = MBGA.29.a
 		set_country_flag = ENG_indian_autonomy 
+		RAJ = {
+			add_ideas = RAJ_promise_of_dominionhood
+		}
+	}
+	# choose to not give india autonomy
+	option = {
+		name = MBGA.29.b
+		
 	}
 }

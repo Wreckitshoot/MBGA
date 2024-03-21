@@ -5341,30 +5341,96 @@ focus_tree = {
 	focus = {
 		id = ENG_indian_dominionhood
 		prerequisite = { focus = ENG_Continue_the_statute }
-		icon = GFX_focus_research2
+		icon = GFX_goal_support_democracy
 		x = 3
 		y = 1
 		relative_position_id = ENG_Continue_the_statute
 		cost = 10
-
+		available = {
+			RAJ = {
+				has_idea = RAJ_promise_of_dominionhood
+			}
+		}
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+			set_autonomy = {
+				target = RAJ
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			swap_ideas = {
+				remove_idea = RAJ_promise_of_dominionhood
+				add_idea = RAJ_dominionhood
+			}
 		}
 	}
 	focus = {
 		id = ENG_dominion_of_pakistan
 		prerequisite = { focus = ENG_indian_dominionhood }
-		icon = GFX_focus_research2
+		icon = GFX_focus_RAJ_two_nation_theory
 		x = 0
 		y = 1
 		relative_position_id = ENG_indian_dominionhood
 		cost = 10
-
+		available = {
+			OR = {
+				RAJ = {
+					owns_state = 440
+					owns_state = 441
+					owns_state = 442
+					owns_state = 443
+					owns_state = 444
+					owns_state = 445
+					owns_state = 787
+				}
+				ENG = {
+					owns_state = 440
+					owns_state = 441
+					owns_state = 442
+					owns_state = 443
+					owns_state = 444
+					owns_state = 445
+					owns_state = 787
+				}
+			}
+		}
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			hidden_effect = {
+				transfer_state = 440
+				transfer_state = 441
+				transfer_state = 442
+				transfer_state = 443
+				transfer_state = 444
+				transfer_state = 445
+				transfer_state = 787
+				release_autonomy = {
+					target = PAK
+					autonomy_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				PAK = {
+					set_country_flag = Voted_yes_on_imperial_economy
+					set_country_flag = Voted_yes_on_imperial_trade
+					set_country_flag = Voted_yes_on_imperial_defence
+				}
+				RAJ = {
+					remove_ideas = RAJ_marginalized_muslim_community
+					remove_ideas = RAJ_marginalized_muslim_community_angry
+					remove_ideas = RAJ_marginalized_muslim_community_happy
+				}
+				Update_imperial_modifiers = yes
+			}
+			effect_tooltip = {
+				release_autonomy = {
+					target = PAK
+					autonomy_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+			}
 			
 		}
 	}

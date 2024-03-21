@@ -1,6 +1,36 @@
 ideas = {
 
 	country = {
+		RAJ_dominionhood = {
+			allowed = {
+				is_subject = yes
+			}
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		RAJ_promise_of_dominionhood = {
+			allowed = {
+				is_subject = yes
+			}
+			picture = generic_political_support
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
 		ENG_imperial_trade_idea = {
 			allowed = {
 				is_subject = yes
