@@ -151,10 +151,7 @@ ENG_expand_westminister_decs = {
 		cost = 100
 		
 		complete_effect = { ## when this decision is selected this happens
-			set_country_flag = Voted_yes_on_imperial_economy
-			set_country_flag = Voted_yes_on_imperial_trade
-			set_country_flag = Voted_yes_on_imperial_defence
-			Update_imperial_modifiers = yes
+			
 			set_autonomy = {
 				target = JAM
 				autonomy_state = autonomy_dominion
@@ -425,6 +422,11 @@ ENG_expand_westminister_decs = {
 					add_state_core = 310
 				}
 			}
+			set_country_flag = Voted_yes_on_imperial_economy
+			set_country_flag = Voted_yes_on_imperial_trade
+			set_country_flag = Voted_yes_on_imperial_defence
+			Update_imperial_modifiers = yes
+			
 		}
 	}
 	ENG_Release_egypt = {
@@ -455,10 +457,7 @@ ENG_expand_westminister_decs = {
 		cost = 100
 		
 		complete_effect = { ## when this decision is selected this happens
-			set_country_flag = Voted_yes_on_imperial_economy
-			set_country_flag = Voted_yes_on_imperial_trade
-			set_country_flag = Voted_yes_on_imperial_defence
-			Update_imperial_modifiers = yes
+			
 			set_autonomy = {
 				target = EGY
 				autonomy_state = autonomy_dominion
@@ -606,6 +605,10 @@ ENG_expand_westminister_decs = {
 					limit = { EGY = {owns_state = 885  } }
 					add_state_core = 885
 				}
+				set_country_flag = Voted_yes_on_imperial_economy
+				set_country_flag = Voted_yes_on_imperial_trade
+				set_country_flag = Voted_yes_on_imperial_defence
+				Update_imperial_modifiers = yes
 			}
 		}
 	}
@@ -670,10 +673,7 @@ ENG_expand_westminister_decs = {
 		cost = 100
 		
 		complete_effect = { ## when this decision is selected this happens
-			set_country_flag = Voted_yes_on_imperial_economy
-			set_country_flag = Voted_yes_on_imperial_trade
-			set_country_flag = Voted_yes_on_imperial_defence
-			Update_imperial_modifiers = yes
+			
 			set_autonomy = {
 				target = NGA
 				autonomy_state = autonomy_dominion
@@ -808,6 +808,7 @@ ENG_expand_westminister_decs = {
 					limit = { ENG = {owns_state = 298  } }
 					transfer_state = 298
 				}
+				
 			}
 		}
 		
@@ -944,6 +945,10 @@ ENG_expand_westminister_decs = {
 					limit = { NGA = {owns_state = 298  } }
 					add_state_core = 298
 				}
+				set_country_flag = Voted_yes_on_imperial_economy
+				set_country_flag = Voted_yes_on_imperial_trade
+				set_country_flag = Voted_yes_on_imperial_defence
+				Update_imperial_modifiers = yes
 			}
 		}
 	}

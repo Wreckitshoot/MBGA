@@ -5228,7 +5228,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_economic_forum
 		prerequisite = { focus = ENG_Continue_the_statute }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_construct_infrastructure
 		x = -3
 		y = 1
 		relative_position_id = ENG_Continue_the_statute
@@ -5256,7 +5256,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_trade_commitee
 		prerequisite = { focus = ENG_Continue_the_statute }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_positive_trade_relations
 		x = -1
 		y = 1
 		relative_position_id = ENG_Continue_the_statute
@@ -5281,7 +5281,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_defence_force 
 		prerequisite = { focus = ENG_Continue_the_statute }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_army_doctrines
 		x = 1
 		y = 1
 		relative_position_id = ENG_Continue_the_statute
@@ -5296,7 +5296,7 @@ focus_tree = {
 	focus = {
 		id = ENG_naval_cooperation
 		prerequisite = { focus = ENG_imperial_defence_force }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -1
 		y = 2
 		relative_position_id = ENG_imperial_defence_force
@@ -5311,7 +5311,7 @@ focus_tree = {
 	focus = {
 		id = ENG_special_forces_cooperation
 		prerequisite = { focus = ENG_imperial_defence_force }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_special_forces
 		x = 0
 		y = 1
 		relative_position_id = ENG_imperial_defence_force
@@ -5326,7 +5326,7 @@ focus_tree = {
 	focus = {
 		id = ENG_air_cooperation
 		prerequisite = { focus = ENG_imperial_defence_force }
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_air_doctrine
 		x = 1
 		y = 2
 		relative_position_id = ENG_imperial_defence_force
@@ -5341,7 +5341,7 @@ focus_tree = {
 	focus = {
 		id = ENG_indian_dominionhood
 		prerequisite = { focus = ENG_Continue_the_statute }
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 		x = 3
 		y = 1
 		relative_position_id = ENG_Continue_the_statute
@@ -5378,7 +5378,6 @@ focus_tree = {
 			OR = {
 				RAJ = {
 					owns_state = 440
-					owns_state = 441
 					owns_state = 442
 					owns_state = 443
 					owns_state = 444
@@ -5387,7 +5386,6 @@ focus_tree = {
 				}
 				ENG = {
 					owns_state = 440
-					owns_state = 441
 					owns_state = 442
 					owns_state = 443
 					owns_state = 444
@@ -5401,7 +5399,6 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				transfer_state = 440
-				transfer_state = 441
 				transfer_state = 442
 				transfer_state = 443
 				transfer_state = 444

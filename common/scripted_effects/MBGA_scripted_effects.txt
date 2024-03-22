@@ -99,7 +99,7 @@ Update_imperial_modifiers = {
 	#Voted_yes_on_imperial_economy
 	#Voted_yes_on_imperial_trade
 	#Voted_yes_on_imperial_defence
-	add_political_power = 100
+	
 	
 	
 	####imperial economy
@@ -113,7 +113,6 @@ Update_imperial_modifiers = {
 			var = imperial_economy_members
 			value = 0
 		}
-		add_political_power = 100
 		every_country = {
 			limit = {
 				has_country_flag = Voted_yes_on_imperial_economy
@@ -136,7 +135,6 @@ Update_imperial_modifiers = {
 				modifier = ENG_imperial_economy_modifier  
 				scope = THIS
 			}
-			add_political_power = 100
 		}
 		set_variable = { imperial_economy_flat = imperial_economy_members }
 		set_variable = { imperial_economy_percent = 0.05 }
@@ -195,5 +193,98 @@ Update_imperial_modifiers = {
 			}
 		}
 	}
-	
+	every_country = {
+		limit = {
+			has_country_flag = Voted_yes_on_imperial_defence
+			
+		}
+		set_variable = {
+			var = imperial_defence_members
+			value = 0
+		}
+		every_country = {
+			limit = {
+				has_country_flag = Voted_yes_on_imperial_defence
+			}
+			PREV = { add_to_variable = { imperial_defence_members = 1 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { 
+						modifier = ENG_imperial_defence_modifier 
+						scope = THIS
+					}
+				}
+				ENG = {
+					has_completed_focus = ENG_imperial_defence_force
+				}
+			}
+			add_dynamic_modifier = { 
+				modifier = ENG_imperial_defence_modifier  
+				scope = THIS
+			}
+		}
+		
+		
+		
+		
+		#army
+		set_variable = { imperial_army_flat = imperial_defence_members }
+		set_variable = { imperial_army_percent = 0.05 }
+		multiply_variable = { imperial_army_percent = imperial_defence_members }
+		
+		
+		
+		#special forces
+		set_variable = { imperial_special_percent = 0.05 }
+		multiply_variable = { imperial_special_percent = imperial_defence_members }
+		
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						has_completed_focus = ENG_special_forces_cooperation
+					}
+				}
+			}
+			set_variable = { imperial_special_percent = 0 }
+		}
+		
+		#Airforce
+		set_variable = { imperial_air_percent = 0.05 }
+		multiply_variable = { imperial_air_percent = imperial_defence_members }
+		
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						has_completed_focus = ENG_air_cooperation
+					}
+				}
+			}
+			set_variable = { imperial_air_percent = 0 }
+		}
+		
+		#Navy
+		set_variable = { imperial_navy_flat = imperial_defence_members }
+		set_variable = { imperial_navy_percent = 0.05 }
+		multiply_variable = { imperial_navy_percent = imperial_defence_members }
+		
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						has_completed_focus = ENG_naval_cooperation
+					}
+				}
+			}
+			set_variable = { imperial_navy_flat = 0 }
+			set_variable = { imperial_navy_percent = 0 }
+		}
+		
+		
+		#set_variable = { imperial_economy_percent_neg = imperial_economy_percent }
+		#multiply_variable = { imperial_economy_percent_neg = -1 }
+	}
 }

@@ -2,6 +2,19 @@
 
  ###goals/focuses
  
+ ENG_imperial_defence_force:0 "Imperial Defence Force"
+ ENG_imperial_defence_force_desc:0 "Each of our self ruling dominions command their own army in defence of the empire, if we combine our forces into a empire wide structure we shall be much more effective in the defence of the empire"
+ ENG_naval_cooperation:0 "Expand for naval Cooperation"
+ ENG_naval_cooperation_desc:0 "A large amount of our Empire relies upon the trade between each of the dominions with britian, but Britain is an island across vast ocean away from the empire, it is important that we cooperate with the dominions fleets to keep the trade flowing"
+ ENG_special_forces_cooperation:0 "Expand for Special forces Cooperation"
+ ENG_special_forces_cooperation_desc:0 "Beyond our basic branches of the kings Army, their a specialised forces made for more specific terrains, our Empire ranged from the himilayan mountains, to the deserts of australia yo the tundra of canada, it would very benefitial to train our special forces in their specialised situations"
+ ENG_air_cooperation:0 "Expand for Aireal Cooperation"
+ ENG_air_cooperation_desc:0 "Aireal combat is clearly the future of warfare, it is important that the empire works togethor to keep the kings airforces at peak condition"
+ 
+ ENG_imperial_economic_forum:0 "Ratify Imperial Trade Forum"
+ ENG_imperial_economic_forum_desc:0 "Those who voted in the imperial confrence desire greater economic support around the empire a forum of which we may help each other is needed"
+ ENG_imperial_trade_commitee:0 "Ratify Imperial trade Commitee"
+ ENG_imperial_trade_commitee_desc:0 "After the most recent imperial confrence many members agreed to join a comitee to help support trade in the Empire"
  ENG_dominion_of_pakistan:0 "Dominian of Pakistan"
  ENG_dominion_of_pakistan_desc:0 "Inside the Raj there is large marginilised population of muslims we should push to give them their own land and dominion under the empire."
  ENG_indian_dominionhood:0 "Indian Dominionhood"
