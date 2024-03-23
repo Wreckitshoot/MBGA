@@ -74,18 +74,23 @@
  ENG_Expand_MI6:0 "Expand SIS"
  ENG_Expand_MI6_desc:0 "In preperations for war with Germany, it is important we know what they are doing on the inside, hence greater funding is reqiuired for SIS"
  ENG_royal_mobilisation_act:0 "Royal Mobilization Act"
- ENG_royal_mobilisation_act_desc:0 "§6Ask DYS§!"
+ ENG_royal_mobilisation_act_desc:0 "We'll need to be ready when the war comes, for us to be ready we'll need a mobilized economy. The mobilization Act will allow us to put into motion a slow but natural moblization of the British economy"
  
  ENG_prepare_rations:0 "Prepare war rations"
- ENG_prepare_rations_desc:0 "§6ask dys§!"
+ ENG_prepare_rations_desc:0 "In times of war, most of our produce goes to our soilders, but whos now making that produce? we'll need to keep a large stock of rations to feed our troops while our troops are still making food in their civilian jobs"
  
  ENG_Cilvilian_home_front_training:0 "Cilvilian Home Front Training"
- ENG_Cilvilian_home_front_training_desc:0 "§6ask dys§!"
+ ENG_Cilvilian_home_front_training_desc:0 "When the war kicks off, we'll have a large amount of civilians who are not on the front lines, they'll need to go through basci rationing classes aswell as bunker drills to keep the civilian population alive during the innevitable crisis"
  
  ###flags 
  parliament_in_session_flag:0 "Parliament is in session"
  
  ###decisions
+ 
+ democratic_campaigns:0 "Democratic Campaigns"
+ uk_small_lobby_effort:0 "Small Lobby Effort"
+ uk_medium_lobby_effort:0 "Medium Lobby Effort"
+ 
  ENG_release_nigeria:0 "Release Nigeria"
  ENG_reoccupy_suez:0 "Re-occupy the Suez"
  ENG_Release_egypt:0 "Release Egypt"

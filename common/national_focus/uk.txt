@@ -274,6 +274,12 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
+					has_government = democratic
+				}
+				parliament_medium_support_trigger = yes
+			}
+			if = {
+				limit = {
 					has_dlc = "Man the Guns"
 				}
 				OR = {
@@ -575,6 +581,12 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
+					has_government = democratic
+				}
+				parliament_medium_support_trigger = yes
+			}
+			if = {
+				limit = {
 					has_dlc = "Man the Guns"
 				}
 				OR = {
@@ -662,6 +674,13 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
+					has_government = democratic
+				}
+				parliament_medium_support_trigger = yes
+			}
+			
+			if = {
+				limit = {
 					has_dlc = "Man the Guns"
 				}
 				OR = {
@@ -726,6 +745,12 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				parliament_medium_support_trigger = yes
+			}
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -1895,6 +1920,7 @@ focus_tree = {
 		}
 
 		available = {
+			parliament_medium_support_trigger = yes #aka you have majority in parliament
 			NOT = {
 				has_idea = ENG_king_edward
 			}
@@ -2134,6 +2160,7 @@ focus_tree = {
 		}
 
 		available = { 
+			parliament_high_support_trigger = yes
 			is_subject = no
 			OR = {
 				has_government = democratic
@@ -2167,6 +2194,7 @@ focus_tree = {
 			add_political_power = 80
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
 			hidden_effect = { news_event = { id = mtg_news.14 days = 1 } }
+			USA_congress_large_opposition = yes
 		}
 	}
 
@@ -5491,7 +5519,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			parliament_high_support_trigger = yes
 		}
 
 		continue_if_invalid = yes
@@ -5634,13 +5662,14 @@ focus_tree = {
 				}								
 			}
 		}
+		USA_congress_medium_opposition = yes
 	}
 
 	focus = {
 		id = ENG_every_man_will_do_his_duty
 		prerequisite = { focus = ENG_global_defense }
 		available = { 
-			
+			parliament_high_support_trigger = yes
 		}
 
 		continue_if_invalid = yes
@@ -5654,6 +5683,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			add_stability = -0.10
 			swap_ideas = {
 				remove_idea = ENG_the_war_to_end_all_wars
@@ -5667,6 +5697,7 @@ focus_tree = {
 		id = ENG_motion_of_no_confidence
 		prerequisite = { focus = ENG_global_defense }
 		available = { 
+			parliament_medium_support_trigger = yes
 			has_country_leader =  {
 				character = ENG_neville_chamberlain
 				ruling_only = yes
@@ -5697,6 +5728,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			USA_congress_small_support = yes
 			add_stability = -0.10
 			country_event = { id = mtg_britain.22 }
 		}
@@ -5707,6 +5739,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_every_man_will_do_his_duty }
 		prerequisite = { focus = ENG_motion_of_no_confidence }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -5730,6 +5763,7 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = ENG_no_further_appeasement_idea
 			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
+			remove_ideas = ENG_parliament_act_1911
 		}
 	}
 	
@@ -5743,6 +5777,7 @@ focus_tree = {
 		id = ENG_The_eastern_threat
 		prerequisite = { focus = ENG_no_further_appeasement }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -5757,6 +5792,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			add_ideas = ENG_idea_The_eastern_threat
 			JAP = {
 				add_opinion_modifier = {
@@ -5775,6 +5811,7 @@ focus_tree = {
 		id = ENG_Anti_JAP_warfare
 		prerequisite = { focus = ENG_The_eastern_threat }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -5789,6 +5826,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			swap_ideas = {
 				remove_idea = ENG_idea_The_eastern_threat
 				add_idea = ENG_idea_The_eastern_threat_2
@@ -5799,6 +5837,7 @@ focus_tree = {
 		id = ENG_fortify_east_asia
 		prerequisite = { focus = ENG_The_eastern_threat }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 			336 = {
 				CONTROLLER = {
@@ -5829,6 +5868,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			unlock_decision_category_tooltip = ENG_fortify_east_asia
 			if = {
 				limit = {
@@ -5902,6 +5942,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_fortify_east_asia  }
 		prerequisite = { focus = ENG_Anti_JAP_warfare }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 			
 		}
@@ -5917,6 +5958,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			declare_war_on = {
                 target = JAP
                 type = puppet_wargoal_focus
@@ -5928,6 +5970,7 @@ focus_tree = {
 		id = ENG_The_german_threat
 		prerequisite = { focus = ENG_no_further_appeasement }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 		}
 
@@ -5942,6 +5985,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			add_ideas = ENG_idea_The_german_threat
 			GER = {
 				add_opinion_modifier = {
@@ -5960,6 +6004,7 @@ focus_tree = {
 		id = ENG_Anti_GER_warfare
 		prerequisite = { focus = ENG_The_german_threat }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 		}
 
@@ -5974,6 +6019,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			swap_ideas = {
 				remove_idea = ENG_idea_The_german_threat
 				add_idea = ENG_idea_The_german_threat_2
@@ -5984,6 +6030,7 @@ focus_tree = {
 		id = ENG_alliance_with_france
 		prerequisite = { focus = ENG_The_german_threat }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 			
 		}
@@ -5999,6 +6046,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			FRA = {
 				country_event = {
 					id = MBGA.6
@@ -6012,6 +6060,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_alliance_with_france  }
 		prerequisite = { focus = ENG_Anti_GER_warfare }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 			
 		}
@@ -6027,6 +6076,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			declare_war_on = {
                 target = GER
                 type = puppet_wargoal_focus
@@ -6038,6 +6088,7 @@ focus_tree = {
 		id = ENG_The_communist_threat
 		prerequisite = { focus = ENG_no_further_appeasement }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6052,6 +6103,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			add_ideas = ENG_idea_The_communist_threat
 			SOV = {
 				add_opinion_modifier = {
@@ -6070,6 +6122,7 @@ focus_tree = {
 		id = ENG_Anti_SOV_warfare
 		prerequisite = { focus = ENG_The_communist_threat }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6084,6 +6137,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			swap_ideas = {
 				remove_idea = ENG_idea_The_communist_threat
 				add_idea = ENG_idea_The_communist_threat_2
@@ -6094,6 +6148,7 @@ focus_tree = {
 		id = ENG_belly_of_the_bear
 		prerequisite = { focus = ENG_The_communist_threat }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 			OR = {
 				AND = {
@@ -6120,6 +6175,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			PER = {
 				if = {
 					limit = {
@@ -6146,6 +6202,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_belly_of_the_bear  }
 		prerequisite = { focus = ENG_Anti_SOV_warfare }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 			
 		}
@@ -6161,6 +6218,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			declare_war_on = {
                 target = SOV
                 type = puppet_wargoal_focus
@@ -6172,6 +6230,7 @@ focus_tree = {
 		id = ENG_The_meditereanian_threat
 		prerequisite = { focus = ENG_no_further_appeasement }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6186,6 +6245,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			add_ideas = ENG_idea_The_meditereanian_threat
 			ITA = {
 				add_opinion_modifier = {
@@ -6204,6 +6264,7 @@ focus_tree = {
 		id = ENG_Anti_ITA_warfare
 		prerequisite = { focus = ENG_The_meditereanian_threat }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6222,12 +6283,14 @@ focus_tree = {
 				remove_idea = ENG_idea_The_meditereanian_threat
 				add_idea = ENG_idea_The_meditereanian_threat_2
 			}
+			USA_congress_small_opposition = yes
 		}
 	}
 	focus = {
 		id = ENG_meditereanian_fortify
 		prerequisite = { focus = ENG_The_meditereanian_threat }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 			447 = {
 				CONTROLLER = {
@@ -6250,6 +6313,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			unlock_decision_category_tooltip = ENG_fortify_Mediterranean
 			if = {
 				limit = {
@@ -6295,7 +6359,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_Anti_ITA_warfare }
 		available = { 
 			is_subject = no
-			
+			parliament_low_support_trigger = yes
 		}
 
 		continue_if_invalid = yes
@@ -6309,6 +6373,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			declare_war_on = {
                 target = ITA
                 type = puppet_wargoal_focus
@@ -6320,6 +6385,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_no_further_appeasement focus = ENG_prepare_for_the_inevitable}
 		mutually_exclusive = { focus = ENG_maintaining_the_balance_of_power }
 		available = { 
+			parliament_low_support_trigger = yes
 			is_subject = no
 		}
 		bypass = {
@@ -6348,6 +6414,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.5
@@ -6420,6 +6487,7 @@ focus_tree = {
 		id = ENG_enforce_the_naval_treaties
 		prerequisite = { focus = ENG_maintaining_imperial_integrity }
 		available = { 
+			parliament_medium_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6434,6 +6502,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			unlock_decision_category_tooltip = ENG_enforce_the_naval_treaties
 			custom_effect_tooltip = ENG_enforce_the_naval_treaties_tt
 			hidden_effect = { news_event = { id = mtg_news.17 days = 1 } }
@@ -6445,6 +6514,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_no_further_appeasement }
 		mutually_exclusive = { focus = ENG_maintaining_imperial_integrity }
 		available = { 
+			parliament_high_support_trigger = yes
 			is_subject = no
 		}
 
@@ -6703,7 +6773,7 @@ focus_tree = {
 		id = ENG_prepare_for_the_inevitable
 		mutually_exclusive = { focus = ENG_global_defense }
 		available = {
-
+			parliament_low_support_trigger = yes
 		}		
 		prerequisite = { focus = ENG_steady_as_she_goes }
 
@@ -6733,6 +6803,7 @@ focus_tree = {
 				set_variable = { prepare_for_the_inevitable_var = 0.025}
 				add_dynamic_modifier = { modifier = prepare_for_the_inevitable_modifier }
 			}
+			USA_congress_small_opposition = yes
 		}
 	}
 	
@@ -6740,7 +6811,7 @@ focus_tree = {
 		id = ENG_kickstart_the_war_industry
 		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 		available = { 
-			
+			parliament_medium_support_trigger = yes
 		}
 
 		continue_if_invalid = yes
@@ -6767,6 +6838,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			random_owned_controlled_state = {
 				limit = {
@@ -6834,6 +6906,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			if = {
 				limit = {
@@ -6885,6 +6958,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
@@ -6922,7 +6996,7 @@ focus_tree = {
 	focus = {
 		id = ENG_prepare_rations
 		available = {
-			
+			parliament_low_support_trigger = yes
 		}
 		available = {
 			has_war = no
@@ -6940,6 +7014,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			#add_ideas = prepare_rations_idea
 			prepare_for_the_inevitable_up = yes
 			custom_effect_tooltip = ENG_prepare_rations_tooltip
@@ -6970,6 +7045,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			unlock_decision_category_tooltip = ENG_home_defence_act_decs
 			prepare_for_the_inevitable_up = yes
 			# Ipswich
@@ -7036,6 +7112,7 @@ focus_tree = {
 	focus = {
 		id = ENG_Cilvilian_home_front_training
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 		}
 
@@ -7059,6 +7136,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			swap_ideas = {
 				remove_idea = stiff_upper_lip
@@ -7069,8 +7147,8 @@ focus_tree = {
 	focus = {
 		id = ENG_Expand_MI6
 		available = {
+			parliament_medium_support_trigger = yes
 			has_war = no
-			
 		}
 
 		available_if_capitulated = yes
@@ -7093,6 +7171,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			if = {
 				limit = {
@@ -7112,6 +7191,7 @@ focus_tree = {
 	focus = {
 		id = ENG_scotish_manufactories
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 			controls_state = 121
 			controls_state = 133
@@ -7138,6 +7218,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			121 = {
 				add_building_construction = {
@@ -7168,6 +7249,7 @@ focus_tree = {
 	focus = {
 		id = ENG_scotish_oil
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 			controls_state = 120
 			controls_state = 933
@@ -7193,6 +7275,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			add_resource = {
 				type = oil
@@ -7209,6 +7292,7 @@ focus_tree = {
 	focus = {
 		id = ENG_recruit_oxford_scientists
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 		}
 
@@ -7239,6 +7323,7 @@ focus_tree = {
 	focus = {
 		id = ENG_Innovate_our_doctrine_of_war
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 		}
 
@@ -7283,6 +7368,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_the_allies
 		available = {
+			parliament_medium_support_trigger = yes
 			has_war = no
 			is_faction_leader = yes
 			NOT = { has_war_with = FRA}
@@ -7310,6 +7396,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			FRA = {
 				country_event = {
@@ -7322,6 +7409,7 @@ focus_tree = {
 	focus = {
 		id = ENG_friends_in_scandinavia
 		available = {
+			parliament_medium_support_trigger = yes
 			has_war = no
 			is_faction_leader = yes
 			OR = {
@@ -7352,6 +7440,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			if = {
 				limit = {
@@ -7403,6 +7492,7 @@ focus_tree = {
 	focus = {
 		id = ENG_friends_in_the_baltics
 		available = {
+			parliament_medium_support_trigger = yes
 			has_war = no
 			is_faction_leader = yes
 			OR = {
@@ -7432,6 +7522,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			if = {
 				limit = {
@@ -7472,6 +7563,7 @@ focus_tree = {
 	focus = {
 		id = ENG_friends_in_the_benelux
 		available = {
+			parliament_low_support_trigger = yes
 			has_war = no
 			is_faction_leader = yes
 			OR = {
@@ -7501,6 +7593,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			prepare_for_the_inevitable_up = yes
 			if = {
 				limit = {
@@ -7543,6 +7636,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expand_the_allies }
 		icon = GFX_focus_generic_balkan_diplomacy
 		available = {
+			parliament_low_support_trigger = yes
 			has_government = democratic
 		}
 		bypass = {
@@ -7563,6 +7657,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			every_country = {
 				limit = {
 					OR = {
@@ -7642,6 +7737,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_large_opposition = yes
 			YUG = {
 				complete_national_focus = YUG_end_the_regency
 			}
@@ -7679,6 +7775,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_large_opposition = yes
 			ROM = {
 				complete_national_focus = ROM_force_abdication
 				complete_national_focus = ROM_king_michaels_coup
@@ -7714,6 +7811,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
+			USA_congress_medium_opposition = yes
 			GRE = {
 				country_event = {
 					id = MBGA.8

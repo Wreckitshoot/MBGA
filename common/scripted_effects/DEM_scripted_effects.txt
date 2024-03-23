@@ -1,11 +1,11 @@
 #Add to scripted triggers if more levels of hyper inflation is added
 #LIST FOR QUICK ACCESS
-#USA_congress_large_opposition
-#USA_congress_medium_opposition
-#USA_congress_small_opposition
-#USA_congress_large_support
-#USA_congress_medium_support
-#USA_congress_small_support
+#USA_congress_large_opposition = yes
+#USA_congress_medium_opposition = yes
+#USA_congress_small_opposition = yes
+#USA_congress_large_support = yes
+#USA_congress_medium_support = yes
+#USA_congress_small_support = yes
 
 
 

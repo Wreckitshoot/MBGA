@@ -13,6 +13,13 @@
 #	}
 #
 
+
+#quick access
+#parliament_low_support_trigger = yes
+#parliament_medium_support_trigger = yes
+#parliament_high_support_trigger = yes
+
+
 Im_a_parliament = {
 	tag = ENG
 }

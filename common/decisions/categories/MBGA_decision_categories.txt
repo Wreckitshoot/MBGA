@@ -9,7 +9,7 @@
 			original_tag = ENG
 		}
 		visible = {
-			
+			has_government = democratic
 		}
 	
 		scripted_gui = usa_congress_decision_ui	
